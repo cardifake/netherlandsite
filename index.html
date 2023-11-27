@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Netherland</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("background1.png"), url("background2.png"), url("background3.png");
+      background-size: cover;
+      animation: slideshow 10s ease infinite;
+    }
+
+    @keyframes slideshow {
+      0% {
+        background-image: url("background1.png");
+      }
+
+      33% {
+        background-image: url("background2.png");
+      }
+
+      66% {
+        background-image: url("background3.png");
+      }
+
+      100% {
+        background-image: url("background1.png");
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #fff;
+      margin-top: 5rem;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(40, end);
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    button {
+      margin: 0 1rem;
+      padding: 0.5rem 2rem;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #00000060;
+      border: 2px solid #ffffff50;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      opacity: 0.7;
+    }
+
+
+    button.discord {
+      color: #ffffff;
+      background-color: #5865f24b;
+      border: 3px solid #5865f2c5;
+    }
+
+    button.discord:hover {
+      background-color: #5865f27c;
+      border: 3px solid #5865f2;
+      opacity: 1;
+    }
+
+    button.discord:active {
+      background-color: #5865f22c;
+      border: 3px solid #5865f2c5;
+      animation: none;
+    }
+
+    button.vote {
+      color: #ffffff;
+      background-color: #08e2002d;
+      border: 3px solid #1ef517af;
+    }
+
+    button.vote:hover {
+      background-color: #08e20071;
+      border: 3px solid #1ef517;
+      opacity: 1;
+    }
+
+    button.vote:active {
+      background-color: #08e2002d;
+      border: 3px solid #1ef517af;
+      animation: none;
+    }
+
+    button:hover {
+      background-color: #79797967;
+      border: 3px solid #b9b9b9;
+      opacity: 1;
+    }
+
+    button:active {
+      background-color: #4d4d4d63;
+      border: 3px solid #2b2b2b;
+      animation: none;
+    }
+
+    button a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      padding: 0 5px;
+    }
+
+    .notification {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 1rem;
+      background-color: #0072c6;
+      color: #fff;
+      border-radius: 5px;
+      animation: slide-in 0.2s ease forwards;
+    }
+
+    @keyframes slide-in {
+      from {
+        right: -10rem
+      }
+
+      to {
+        right: 1rem
+      }
+
+    }
+
+    @keyframes slide-out {
+      from {
+        right: 1rem
+      }
+
+      to {
+        right: -10rem
+      }
+
+    }
+
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Добро пожаловать на официальный сайт<br>
+ Minecraft сервера Netherland!</h1>
+  <p>Добро пожаловать на Незерленд, Ванильный майнкрафт сервер с уютным экспириенсом! <br> Казуал или про-игрок? Наш сервер подходит любым!</p>
+  <div class="button-container">
+    <button class="discord"> 
+      <a  href="https://discord.gg/TszbFGuvBr">
+       Наш дискорд сервер
+      </a>
+    </button>
+    <button class="vote"> 
+      <a href="https://hotmc.ru/minecraft-server-233382"> 
+        Голосуй за нас! 
+      </a>
+    </button>
+	   <button class="vote1"> 
+      <a href="http://n4.joinserver.ru:25775/"> 
+        Карта 
+      </a>
+    </button>
+  </div>
+</body>
+
+</html>
